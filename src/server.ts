@@ -4,6 +4,7 @@ import express from "express";
 import cors from "cors";
 
 import { env } from "./config/env.js";
+import agentRoutes from "./routes/agent.routes.js";
 
 const app = express();
 
@@ -19,6 +20,11 @@ app.get("/api/v1/health", (_req, res) => {
     timestamp: new Date().toISOString(),
   });
 });
+
+app.use(
+  "/api/v1/agent",
+  agentRoutes,
+);
 
 app.listen(env.PORT, () => {
   console.log(
