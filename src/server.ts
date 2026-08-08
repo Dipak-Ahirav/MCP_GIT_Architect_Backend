@@ -5,6 +5,7 @@ import cors from "cors";
 
 import { env } from "./config/env.js";
 import agentRoutes from "./routes/agent.routes.js";
+import githubRoutes from "./routes/github.routes.js";
 
 const app = express();
 
@@ -24,6 +25,11 @@ app.get("/api/v1/health", (_req, res) => {
 app.use(
   "/api/v1/agent",
   agentRoutes,
+);
+
+app.use(
+  "/api/v1/github",
+  githubRoutes,
 );
 
 app.listen(env.PORT, () => {
