@@ -7,12 +7,19 @@ import {
   chatWithGitArchitect,
 } from "../services/agent.service.js";
 
+import {
+  deleteSession,
+} from "../services/session.service.js";
+
 export const chatWithAgent = async (
   req: Request,
   res: Response,
 ) => {
   try {
-    const { message } = req.body;
+    const {
+      message,
+      sessionId,
+    } = req.body;
 
     if (
       typeof message !== "string" ||
@@ -20,22 +27,52 @@ export const chatWithAgent = async (
     ) {
       return res.status(400).json({
         success: false,
-        message: "Message is required",
+        message:
+          "Message is required",
       });
     }
 
-    const response =
+    if (
+      sessionId !== undefined &&
+      typeof sessionId !== "string"
+    ) {
+      return res.status(400).json({
+        success: false,
+        message:
+          "sessionId must be a string",
+      });
+    }
+
+    const result =
       await chatWithGitArchitect(
         message.trim(),
+        sessionId,
       );
 
     return res.status(200).json({
       success: true,
+
       data: {
-        response,
+        sessionId:
+          result.sessionId,
+
+        response:
+          result.response,
       },
     });
   } catch (error) {
+    if (
+      error instanceof Error &&
+      error.message ===
+        "SESSION_NOT_FOUND"
+    ) {
+      return res.status(404).json({
+        success: false,
+        message:
+          "Session not found or expired. Start a new conversation.",
+      });
+    }
+
     console.error(
       "❌ GitArchitect Agent Error:",
       error,
@@ -43,8 +80,51 @@ export const chatWithAgent = async (
 
     return res.status(500).json({
       success: false,
+
       message:
         "GitArchitect failed to process the request",
     });
   }
 };
+
+export const clearAgentSession =
+  async (
+    req: Request,
+    res: Response,
+  ) => {
+    try {
+      const {
+        sessionId,
+      } = req.params;
+
+      const deleted =
+        await deleteSession(
+          sessionId,
+        );
+
+      if (!deleted) {
+        return res.status(404).json({
+          success: false,
+          message:
+            "Session not found",
+        });
+      }
+
+      return res.status(200).json({
+        success: true,
+        message:
+          "Conversation cleared successfully",
+      });
+    } catch (error) {
+      console.error(
+        "❌ Clear Session Error:",
+        error,
+      );
+
+      return res.status(500).json({
+        success: false,
+        message:
+          "Failed to clear conversation",
+      });
+    }
+  };

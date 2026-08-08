@@ -1,17 +1,68 @@
-import { run } from "@openai/agents";
+import {
+  Runner,
+} from "@openai/agents";
 
-import { gitArchitectAgent } from "../agents/gitArchitect.agent.js";
+import {
+  gitArchitectAgent,
+} from "../agents/gitArchitect.agent.js";
+
+import {
+  createSession,
+  getSession,
+} from "./session.service.js";
+
+const runner = new Runner();
+
+interface ChatResult {
+  sessionId: string;
+  response: string;
+}
 
 export const chatWithGitArchitect = async (
   message: string,
-): Promise<string> => {
-  const result = await run(
-    gitArchitectAgent,
-    message,
-  );
+  sessionId?: string,
+): Promise<ChatResult> => {
+  let session;
+  let activeSessionId;
 
-  return (
-    result.finalOutput ??
-    "GitArchitect was unable to generate a response."
-  );
+  if (sessionId) {
+    session =
+      getSession(sessionId);
+
+    if (!session) {
+      throw new Error(
+        "SESSION_NOT_FOUND",
+      );
+    }
+
+    activeSessionId =
+      sessionId;
+  } else {
+    const created =
+      createSession();
+
+    session =
+      created.session;
+
+    activeSessionId =
+      created.sessionId;
+  }
+
+  const result =
+    await runner.run(
+      gitArchitectAgent,
+      message,
+      {
+        session,
+      },
+    );
+
+  return {
+    sessionId:
+      activeSessionId,
+
+    response:
+      result.finalOutput ??
+      "GitArchitect was unable to generate a response.",
+  };
 };
