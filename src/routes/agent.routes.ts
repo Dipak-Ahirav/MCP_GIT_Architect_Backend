@@ -18,6 +18,10 @@ import {
   analyzeSelectedRepository,
 } from "../controllers/repository-analyzer.controller.js";
 
+import {
+  reviewSelectedPullRequest,
+} from "../controllers/pr-review.controller.js";
+
 const router =
   Router();
 
@@ -64,6 +68,11 @@ router.post(
 router.delete(
   "/sessions/:sessionId",
   clearAgentSession,
+);
+
+router.post(
+  "/sessions/:sessionId/pull-requests/:pullNumber/review",
+  reviewSelectedPullRequest,
 );
 
 /*
