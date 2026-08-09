@@ -22,6 +22,10 @@ import {
   reviewSelectedPullRequest,
 } from "../controllers/pr-review.controller.js";
 
+import {
+  analyzeSelectedIssue,
+} from "../controllers/issue-analyzer.controller.js";
+
 const router =
   Router();
 
@@ -73,6 +77,11 @@ router.delete(
 router.post(
   "/sessions/:sessionId/pull-requests/:pullNumber/review",
   reviewSelectedPullRequest,
+);
+
+router.post(
+  "/sessions/:sessionId/issues/:issueNumber/analyze",
+  analyzeSelectedIssue,
 );
 
 /*
