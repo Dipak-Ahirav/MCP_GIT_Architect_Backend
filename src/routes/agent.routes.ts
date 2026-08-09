@@ -26,6 +26,10 @@ import {
   analyzeSelectedIssue,
 } from "../controllers/issue-analyzer.controller.js";
 
+import {
+  debugSelectedWorkflowRun,
+} from "../controllers/ci-debugger.controller.js";
+
 const router =
   Router();
 
@@ -82,6 +86,11 @@ router.post(
 router.post(
   "/sessions/:sessionId/issues/:issueNumber/analyze",
   analyzeSelectedIssue,
+);
+
+router.post(
+  "/sessions/:sessionId/actions/runs/:runId/debug",
+  debugSelectedWorkflowRun,
 );
 
 /*

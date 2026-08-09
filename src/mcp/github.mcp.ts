@@ -18,7 +18,7 @@ export const githubMcpTool =
         `Bearer ${env.GITHUB_TOKEN}`,
 
       "X-MCP-Toolsets":
-  "context,repos,issues,pull_requests",
+  "context,repos,issues,pull_requests,actions",
 
       "X-MCP-Readonly":
         "true",
