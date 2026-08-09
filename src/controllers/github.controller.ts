@@ -5,6 +5,7 @@ import type {
 
 import {
   getAuthenticatedGitHubUser,
+  listAccessibleRepositories,
 } from "../services/github.service.js";
 
 export const getGitHubAuthStatus =
@@ -69,6 +70,40 @@ export const getGitHubAuthStatus =
 
         message:
           "Unable to verify GitHub authentication",
+      });
+    }
+  };
+
+  export const getGitHubRepositories =
+  async (
+    _req: Request,
+    res: Response,
+  ) => {
+    try {
+      const repositories =
+        await listAccessibleRepositories();
+
+      return res.status(200).json({
+        success: true,
+
+        data: {
+          count:
+            repositories.length,
+
+          repositories,
+        },
+      });
+    } catch (error) {
+      console.error(
+        "❌ GitHub Repository List Error:",
+        error,
+      );
+
+      return res.status(500).json({
+        success: false,
+
+        message:
+          "Unable to load GitHub repositories",
       });
     }
   };

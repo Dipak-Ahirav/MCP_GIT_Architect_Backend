@@ -4,20 +4,65 @@ import {
 
 import {
   chatWithAgent,
-  clearAgentSession,
 } from "../controllers/agent.controller.js";
+
+import {
+  createAgentSession,
+  selectRepository,
+  getSelectedRepository,
+  removeSelectedRepository,
+  clearAgentSession,
+} from "../controllers/session.controller.js";
 
 const router =
   Router();
 
+/*
+ * Create conversation
+ */
 router.post(
-  "/chat",
-  chatWithAgent,
+  "/sessions",
+  createAgentSession,
 );
 
+/*
+ * Select repository
+ */
+router.put(
+  "/sessions/:sessionId/repository",
+  selectRepository,
+);
+
+/*
+ * Get selected repository
+ */
+router.get(
+  "/sessions/:sessionId/repository",
+  getSelectedRepository,
+);
+
+/*
+ * Unselect repository
+ */
+router.delete(
+  "/sessions/:sessionId/repository",
+  removeSelectedRepository,
+);
+
+/*
+ * Delete conversation
+ */
 router.delete(
   "/sessions/:sessionId",
   clearAgentSession,
+);
+
+/*
+ * Chat
+ */
+router.post(
+  "/chat",
+  chatWithAgent,
 );
 
 export default router;

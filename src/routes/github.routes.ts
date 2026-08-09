@@ -4,6 +4,7 @@ import {
 
 import {
   getGitHubAuthStatus,
+  getGitHubRepositories,
 } from "../controllers/github.controller.js";
 
 const router =
@@ -12,6 +13,11 @@ const router =
 router.get(
   "/auth/status",
   getGitHubAuthStatus,
+);
+
+router.get(
+  "/repositories",
+  getGitHubRepositories,
 );
 
 export default router;

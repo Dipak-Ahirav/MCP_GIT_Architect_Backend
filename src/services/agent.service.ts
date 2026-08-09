@@ -9,60 +9,83 @@ import {
 import {
   createSession,
   getSession,
+  getSessionRepository,
 } from "./session.service.js";
 
-const runner = new Runner();
+import type {
+  GitArchitectContext,
+} from "../types/agent-context.js";
+
+const runner =
+  new Runner();
 
 interface ChatResult {
   sessionId: string;
+
   response: string;
 }
 
-export const chatWithGitArchitect = async (
-  message: string,
-  sessionId?: string,
-): Promise<ChatResult> => {
-  let session;
-  let activeSessionId;
+export const chatWithGitArchitect =
+  async (
+    message: string,
+    sessionId?: string,
+  ): Promise<ChatResult> => {
+    let session;
 
-  if (sessionId) {
-    session =
-      getSession(sessionId);
+    let activeSessionId;
 
-    if (!session) {
-      throw new Error(
-        "SESSION_NOT_FOUND",
-      );
+    if (sessionId) {
+      session =
+        getSession(
+          sessionId,
+        );
+
+      if (!session) {
+        throw new Error(
+          "SESSION_NOT_FOUND",
+        );
+      }
+
+      activeSessionId =
+        sessionId;
+    } else {
+      const created =
+        createSession();
+
+      session =
+        created.session;
+
+      activeSessionId =
+        created.sessionId;
     }
 
-    activeSessionId =
-      sessionId;
-  } else {
-    const created =
-      createSession();
+    const repository =
+      getSessionRepository(
+        activeSessionId,
+      );
 
-    session =
-      created.session;
+    const context:
+      GitArchitectContext = {
+        repository,
+      };
 
-    activeSessionId =
-      created.sessionId;
-  }
+    const result =
+      await runner.run(
+        gitArchitectAgent,
+        message,
+        {
+          session,
 
-  const result =
-    await runner.run(
-      gitArchitectAgent,
-      message,
-      {
-        session,
-      },
-    );
+          context,
+        },
+      );
 
-  return {
-    sessionId:
-      activeSessionId,
+    return {
+      sessionId:
+        activeSessionId,
 
-    response:
-      result.finalOutput ??
-      "GitArchitect was unable to generate a response.",
+      response:
+        result.finalOutput ??
+        "GitArchitect was unable to generate a response.",
+    };
   };
-};
