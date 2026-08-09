@@ -14,6 +14,10 @@ import {
   clearAgentSession,
 } from "../controllers/session.controller.js";
 
+import {
+  analyzeSelectedRepository,
+} from "../controllers/repository-analyzer.controller.js";
+
 const router =
   Router();
 
@@ -47,6 +51,11 @@ router.get(
 router.delete(
   "/sessions/:sessionId/repository",
   removeSelectedRepository,
+);
+
+router.post(
+  "/sessions/:sessionId/repository-analysis",
+  analyzeSelectedRepository,
 );
 
 /*
