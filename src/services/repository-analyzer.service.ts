@@ -18,6 +18,11 @@ import type {
 import type {
   RepositoryAnalysis,
 } from "../schemas/repository-analysis.schema.js";
+import {
+  analyzeRepositoryV2,
+} from "./repository-intelligence.service.js";
+
+
 
 const runner =
   new Runner();
@@ -64,82 +69,85 @@ const calculateOverallScore = (
 };
 
 export const analyzeRepository =
-  async (
-    sessionId: any,
-  ): Promise<
-    RepositoryAnalysisResult
-  > => {
-    const session =
-      getSessionRecord(
-        sessionId,
-      );
+  analyzeRepositoryV2;
 
-    if (!session) {
-      throw new Error(
-        "SESSION_NOT_FOUND",
-      );
-    }
+// export const analyzeRepository =
+//   async (
+//     sessionId: any,
+//   ): Promise<
+//     RepositoryAnalysisResult
+//   > => {
+//     const session =
+//       getSessionRecord(
+//         sessionId,
+//       );
 
-    const repository =
-      getSessionRepository(
-        sessionId,
-      );
+//     if (!session) {
+//       throw new Error(
+//         "SESSION_NOT_FOUND",
+//       );
+//     }
 
-    if (!repository) {
-      throw new Error(
-        "REPOSITORY_NOT_SELECTED",
-      );
-    }
+//     const repository =
+//       getSessionRepository(
+//         sessionId,
+//       );
 
-    const context:
-      GitArchitectContext = {
-        repository,
-      };
+//     if (!repository) {
+//       throw new Error(
+//         "REPOSITORY_NOT_SELECTED",
+//       );
+//     }
 
-    const result =
-      await runner.run(
-        repositoryAnalyzerAgent,
-        `
-Perform a complete architecture analysis of the
-currently selected repository.
+//     const context:
+//       GitArchitectContext = {
+//         repository,
+//       };
 
-Repository:
-${repository.fullName}
+//     const result =
+//       await runner.run(
+//         repositoryAnalyzerAgent,
+//         `
+// Perform a complete architecture analysis of the
+// currently selected repository.
 
-Default branch:
-${repository.defaultBranch}
+// Repository:
+// ${repository.fullName}
 
-Use GitHub MCP extensively enough to support
-your findings with actual repository evidence.
-`,
-        {
-          context,
-        },
-      );
+// Default branch:
+// ${repository.defaultBranch}
 
-    if (!result.finalOutput) {
-      throw new Error(
-        "ANALYSIS_OUTPUT_MISSING",
-      );
-    }
+// Use GitHub MCP extensively enough to support
+// your findings with actual repository evidence.
+// `,
+//         {
+//           context,
+//         },
+//       );
 
-    const analysis =
-      result.finalOutput;
+//     if (!result.finalOutput) {
+//       throw new Error(
+//         "ANALYSIS_OUTPUT_MISSING",
+//       );
+//     }
 
-    const overallScore =
-      calculateOverallScore(
-        analysis.scores,
-      );
+//     const analysis =
+//       result.finalOutput;
 
-    return {
-      repository:
-        repository.fullName,
+//     const overallScore =
+//       calculateOverallScore(
+//         analysis.scores,
+//       );
 
-      defaultBranch:
-        repository.defaultBranch,
+//     return {
+//       repository:
+//         repository.fullName,
 
-      overallScore,
+//       defaultBranch:
+//         repository.defaultBranch,
 
-      analysis,
-    };
-  };
+//       overallScore,
+
+//       analysis,
+//     };
+//   };
