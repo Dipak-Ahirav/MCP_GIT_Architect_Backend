@@ -30,6 +30,11 @@ import {
   debugSelectedWorkflowRun,
 } from "../controllers/ci-debugger.controller.js";
 
+import {
+  requestWrite,
+  decideWriteApproval,
+} from "../controllers/github-write.controller.js";
+
 const router =
   Router();
 
@@ -91,6 +96,22 @@ router.post(
 router.post(
   "/sessions/:sessionId/actions/runs/:runId/debug",
   debugSelectedWorkflowRun,
+);
+
+/*
+ * Request GitHub mutation.
+ */
+router.post(
+  "/sessions/:sessionId/github/write",
+  requestWrite,
+);
+
+/*
+ * Approve / reject pending mutation.
+ */
+router.post(
+  "/github/approvals/:approvalId/decision",
+  decideWriteApproval,
 );
 
 /*
