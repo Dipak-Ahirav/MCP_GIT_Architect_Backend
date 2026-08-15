@@ -14,9 +14,11 @@ import {
 
 import {
   createPendingApproval,
-  deletePendingApproval,
+  failPendingApproval,
   getPendingApproval,
   updatePendingApproval,
+  completePendingApproval,
+  rejectPendingApproval
 } from "./github-approval.service.js";
 
 import type {
@@ -134,11 +136,10 @@ export const requestGitHubWrite =
       0
     ) {
       const approval =
-        createPendingApproval(
-          sessionId,
-
-          result.state.toString(),
-        );
+  await createPendingApproval(
+    sessionId,
+    result.state.toString(),
+  );
 
       return {
         status:
@@ -196,9 +197,9 @@ export const resolveGitHubApproval =
       number,
   ) => {
     const record =
-      getPendingApproval(
-        approvalId,
-      );
+  await getPendingApproval(
+    approvalId,
+  );
 
     if (!record) {
       throw new Error(
@@ -282,7 +283,7 @@ export const resolveGitHubApproval =
       result.interruptions.length >
       0
     ) {
-      updatePendingApproval(
+      await updatePendingApproval(
         approvalId,
 
         result.state.toString(),
@@ -302,9 +303,44 @@ export const resolveGitHubApproval =
     }
 
     /*
+ * No more interruptions.
+ * Mark approval workflow as finished.
+ */
+if (
+  decision ===
+  "approve"
+) {
+  await completePendingApproval(
+    approvalId,
+  );
+} else {
+  await rejectPendingApproval(
+    approvalId,
+  );
+}
+
+/*
+ * Final response.
+ */
+return {
+  status:
+    decision === "approve"
+      ? "completed"
+      : "rejected",
+
+  response:
+    result.finalOutput ??
+    (
+      decision === "approve"
+        ? "GitHub operation completed."
+        : "GitHub operation rejected."
+    ),
+};
+
+    /*
      * Workflow finished.
      */
-    deletePendingApproval(
+    failPendingApproval(
       approvalId,
     );
 

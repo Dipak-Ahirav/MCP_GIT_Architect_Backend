@@ -20,23 +20,37 @@ const runner =
   new Runner();
 
 interface ChatResult {
-  sessionId: string;
+  sessionId:
+    string;
 
-  response: string;
+  response:
+    string;
 }
 
 export const chatWithGitArchitect =
   async (
-    message: string,
-    sessionId?: string,
+    message:
+      string,
+
+    sessionId?:
+      string,
   ): Promise<ChatResult> => {
+
     let session;
 
-    let activeSessionId;
+    let activeSessionId:
+      string;
+
+    /*
+     * ===================================
+     * Existing session
+     * ===================================
+     */
 
     if (sessionId) {
+
       session =
-        getSession(
+        await getSession(
           sessionId,
         );
 
@@ -48,9 +62,17 @@ export const chatWithGitArchitect =
 
       activeSessionId =
         sessionId;
+
     } else {
+
+      /*
+       * ===================================
+       * New session
+       * ===================================
+       */
+
       const created =
-        createSession();
+        await createSession();
 
       session =
         created.session;
@@ -59,8 +81,14 @@ export const chatWithGitArchitect =
         created.sessionId;
     }
 
+    /*
+     * ===================================
+     * Repository context
+     * ===================================
+     */
+
     const repository =
-      getSessionRepository(
+      await getSessionRepository(
         activeSessionId,
       );
 
@@ -69,13 +97,38 @@ export const chatWithGitArchitect =
         repository,
       };
 
+    /*
+     * Temporary safety check.
+     *
+     * You can remove this later.
+     */
+
+    if (
+      typeof session.getItems
+      !== "function"
+    ) {
+      console.error(
+        "Invalid session passed to Runner:",
+        session,
+      );
+
+      throw new Error(
+        "INVALID_SESSION_OBJECT",
+      );
+    }
+
+    /*
+     * ===================================
+     * Run GitArchitect
+     * ===================================
+     */
+
     const result =
       await runner.run(
         gitArchitectAgent,
         message,
         {
           session,
-
           context,
         },
       );

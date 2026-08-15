@@ -2,89 +2,180 @@ import {
   randomUUID,
 } from "node:crypto";
 
-interface PendingApprovalRecord {
-  approvalId:
-    string;
+import {
+  getGitHubApprovalsCollection,
+} from "../config/mongodb.js";
 
-  sessionId:
-    string;
-
-  serializedState:
-    string;
-
-  createdAt:
-    string;
-}
-
-const approvals =
-  new Map<
-    string,
-    PendingApprovalRecord
-  >();
 
 export const createPendingApproval =
-  (
-    sessionId: string,
-    serializedState: string,
+  async (
+    sessionId:
+      string,
+
+    serializedState:
+      string,
   ) => {
+
     const approvalId =
       randomUUID();
 
-    const record:
-      PendingApprovalRecord = {
+    const now =
+      new Date();
+
+    const approval = {
+      _id:
         approvalId,
 
-        sessionId,
+      sessionId,
 
-        serializedState,
+      serializedState,
 
-        createdAt:
-          new Date()
-            .toISOString(),
-      };
+      status:
+        "PENDING" as const,
 
-    approvals.set(
-      approvalId,
-      record,
-    );
+      createdAt:
+        now,
 
-    return record;
-  };
+      updatedAt:
+        now,
+    };
 
-export const getPendingApproval =
-  (
-    approvalId: string,
-  ) => {
-    return approvals.get(
-      approvalId,
-    );
-  };
-
-export const updatePendingApproval =
-  (
-    approvalId: string,
-    serializedState: string,
-  ) => {
-    const record =
-      approvals.get(
-        approvalId,
+    await getGitHubApprovalsCollection()
+      .insertOne(
+        approval,
       );
 
-    if (!record) {
-      return false;
-    }
-
-    record.serializedState =
-      serializedState;
-
-    return true;
+    return approval;
   };
 
-export const deletePendingApproval =
-  (
-    approvalId: string,
+
+export const getPendingApproval =
+  async (
+    approvalId:
+      string,
   ) => {
-    return approvals.delete(
-      approvalId,
+
+    return getGitHubApprovalsCollection()
+      .findOne({
+        _id:
+          approvalId,
+
+        status:
+          "PENDING",
+      });
+  };
+
+
+export const updatePendingApproval =
+  async (
+    approvalId:
+      string,
+
+    serializedState:
+      string,
+  ) => {
+
+    const result =
+      await getGitHubApprovalsCollection()
+        .updateOne(
+          {
+            _id:
+              approvalId,
+
+            status:
+              "PENDING",
+          },
+
+          {
+            $set: {
+              serializedState,
+
+              updatedAt:
+                new Date(),
+            },
+          },
+        );
+
+    return (
+      result.matchedCount >
+      0
     );
+  };
+
+
+export const completePendingApproval =
+  async (
+    approvalId:
+      string,
+  ) => {
+
+    await getGitHubApprovalsCollection()
+      .updateOne(
+        {
+          _id:
+            approvalId,
+        },
+
+        {
+          $set: {
+            status:
+              "COMPLETED",
+
+            updatedAt:
+              new Date(),
+          },
+        },
+      );
+  };
+
+
+export const rejectPendingApproval =
+  async (
+    approvalId:
+      string,
+  ) => {
+
+    await getGitHubApprovalsCollection()
+      .updateOne(
+        {
+          _id:
+            approvalId,
+        },
+
+        {
+          $set: {
+            status:
+              "REJECTED",
+
+            updatedAt:
+              new Date(),
+          },
+        },
+      );
+  };
+
+
+export const failPendingApproval =
+  async (
+    approvalId:
+      string,
+  ) => {
+
+    await getGitHubApprovalsCollection()
+      .updateOne(
+        {
+          _id:
+            approvalId,
+        },
+
+        {
+          $set: {
+            status:
+              "FAILED",
+
+            updatedAt:
+              new Date(),
+          },
+        },
+      );
   };

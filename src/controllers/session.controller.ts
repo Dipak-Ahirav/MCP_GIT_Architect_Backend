@@ -17,12 +17,12 @@ import {
 } from "../services/github.service.js";
 
 export const createAgentSession =
-  (
+  async(
     _req: Request,
     res: Response,
   ) => {
     const session =
-      createSession();
+      await createSession();
 
     return res.status(201).json({
       success: true,
@@ -76,7 +76,7 @@ export const selectRepository =
       }
 
       const session =
-        getSessionRecord(
+        await getSessionRecord(
           sessionId,
         );
 
@@ -101,7 +101,7 @@ export const selectRepository =
           repo.trim(),
         );
 
-      setSessionRepository(
+      await setSessionRepository(
         sessionId,
         repository,
       );
@@ -159,7 +159,7 @@ export const selectRepository =
   };
 
 export const getSelectedRepository =
-  (
+  async(
     req: Request,
     res: Response,
   ) => {
@@ -168,7 +168,7 @@ export const getSelectedRepository =
     } = req.params;
 
     const session =
-      getSessionRecord(
+      await getSessionRecord(
         sessionId,
       );
 
@@ -182,7 +182,7 @@ export const getSelectedRepository =
     }
 
     const repository =
-      getSessionRepository(
+      await getSessionRepository(
         sessionId,
       );
 
@@ -199,7 +199,7 @@ export const getSelectedRepository =
   };
 
 export const removeSelectedRepository =
-  (
+  async(
     req: Request,
     res: Response,
   ) => {
@@ -208,7 +208,7 @@ export const removeSelectedRepository =
     } = req.params;
 
     const cleared =
-      clearSessionRepository(
+      await clearSessionRepository(
         sessionId,
       );
 
