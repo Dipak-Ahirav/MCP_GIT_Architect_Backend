@@ -24,6 +24,13 @@ const envSchema = z.object({
     1,
     "MONGODB_URI is required",
   ),
+
+  MONGODB_LOCAL_FALLBACK_URI: z
+  .string()
+  .min(1)
+  .default(
+    "mongodb://127.0.0.1:27017",
+  ),
   
   MONGODB_DB_NAME: z
   .string()

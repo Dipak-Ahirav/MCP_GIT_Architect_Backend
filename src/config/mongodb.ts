@@ -1,4 +1,8 @@
 import {
+  resolveSrv,
+} from "node:dns/promises";
+
+import {
   MongoClient,
   type Db,
 } from "mongodb";
@@ -21,6 +25,160 @@ let database:
   Db | null =
   null;
 
+const mongodbSrvPrefix =
+  "mongodb+srv://";
+
+const srvLookupTimeoutMs =
+  5000;
+
+
+const isDnsSrvFailure =
+  (
+    error:
+      unknown,
+  ) =>
+    error instanceof Error &&
+    "code" in error &&
+    (
+      error.code === "ECONNREFUSED" ||
+      error.code === "ENOTFOUND" ||
+      error.code === "ETIMEOUT" ||
+      error.code === "ESERVFAIL"
+    );
+
+
+const getSrvLookupHost =
+  (
+    uri:
+      string,
+  ) => {
+    const parsedUri =
+      new URL(
+        uri,
+      );
+
+    return `_mongodb._tcp.${parsedUri.hostname}`;
+  };
+
+
+const createTimeoutError =
+  (
+    message:
+      string,
+  ) =>
+    Object.assign(
+      new Error(
+        message,
+      ),
+      {
+        code:
+          "ETIMEOUT",
+      },
+    );
+
+
+const assertSrvDnsReachable =
+  async (
+    uri:
+      string,
+  ) => {
+    if (
+      !uri.startsWith(
+        mongodbSrvPrefix,
+      )
+    ) {
+      return;
+    }
+
+    const lookupHost =
+      getSrvLookupHost(
+        uri,
+      );
+
+    let timeout:
+      NodeJS.Timeout | undefined;
+
+    try {
+      await Promise.race([
+        resolveSrv(
+          lookupHost,
+        ),
+
+        new Promise<never>(
+          (
+            _resolve,
+            reject,
+          ) => {
+            timeout =
+              setTimeout(
+                () =>
+                  reject(
+                    createTimeoutError(
+                      `MongoDB SRV DNS lookup timed out for ${lookupHost}`,
+                    ),
+                  ),
+                srvLookupTimeoutMs,
+              );
+          },
+        ),
+      ]);
+    } finally {
+      if (timeout) {
+        clearTimeout(
+          timeout,
+        );
+      }
+    }
+  };
+
+
+const shouldTryLocalFallback =
+  (
+    error:
+      unknown,
+  ) =>
+    env.NODE_ENV === "development" &&
+    env.MONGODB_URI.startsWith(
+      mongodbSrvPrefix,
+    ) &&
+    isDnsSrvFailure(
+      error,
+    );
+
+
+const createClient =
+  (
+    uri:
+      string,
+  ) =>
+    new MongoClient(
+      uri,
+      {
+        serverSelectionTimeoutMS:
+          8000,
+      },
+    );
+
+
+const connectWithUri =
+  async (
+    uri:
+      string,
+  ) => {
+    await assertSrvDnsReachable(
+      uri,
+    );
+
+    const mongoClient =
+      createClient(
+        uri,
+      );
+
+    await mongoClient.connect();
+
+    return mongoClient;
+  };
+
 
 export const connectMongoDB =
   async () => {
@@ -28,12 +186,54 @@ export const connectMongoDB =
       return database;
     }
 
-    client =
-      new MongoClient(
-        env.MONGODB_URI,
+    try {
+      client =
+        await connectWithUri(
+          env.MONGODB_URI,
+        );
+    } catch (
+      error
+    ) {
+      if (
+        !shouldTryLocalFallback(
+          error,
+        )
+      ) {
+        throw error;
+      }
+
+      console.warn(
+        "MongoDB Atlas SRV DNS lookup failed. Falling back to local MongoDB for development.",
       );
 
-    await client.connect();
+      console.warn(
+        `Fallback URI: ${env.MONGODB_LOCAL_FALLBACK_URI}`,
+      );
+
+      try {
+        client =
+          await connectWithUri(
+            env.MONGODB_LOCAL_FALLBACK_URI,
+          );
+      } catch (
+        fallbackError
+      ) {
+        throw new Error(
+          [
+            "MongoDB connection failed.",
+            "Atlas SRV DNS lookup was refused, and the local fallback did not connect.",
+            "Start a local MongoDB server or replace MONGODB_URI with a non-SRV mongodb:// URI.",
+            `Local fallback URI: ${env.MONGODB_LOCAL_FALLBACK_URI}`,
+          ].join(
+            " ",
+          ),
+          {
+            cause:
+              fallbackError,
+          },
+        );
+      }
+    }
 
     database =
       client.db(

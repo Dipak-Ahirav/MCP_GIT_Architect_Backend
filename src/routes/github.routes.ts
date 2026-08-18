@@ -16,7 +16,7 @@ router.get(
 );
 
 router.get(
-  "/repositories",
+  "/repos",
   getGitHubRepositories,
 );
 
