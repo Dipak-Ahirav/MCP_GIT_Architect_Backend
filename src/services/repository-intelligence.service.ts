@@ -66,7 +66,7 @@ export const analyzeRepositoryV2 =
      */
 
     const session =
-      getSessionRecord(
+      await getSessionRecord(
         sessionId,
       );
 
@@ -77,7 +77,7 @@ export const analyzeRepositoryV2 =
     }
 
     const repository =
-      getSessionRepository(
+      await getSessionRepository(
         sessionId,
       );
 

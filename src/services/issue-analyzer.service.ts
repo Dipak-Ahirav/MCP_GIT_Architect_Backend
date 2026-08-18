@@ -39,7 +39,7 @@ export const analyzeIssue =
     issueNumber: number,
   ): Promise<IssueAnalysisResult> => {
     const session =
-      getSessionRecord(
+      await getSessionRecord(
         sessionId,
       );
 
@@ -50,7 +50,7 @@ export const analyzeIssue =
     }
 
     const repository =
-      getSessionRepository(
+      await getSessionRepository(
         sessionId,
       );
 

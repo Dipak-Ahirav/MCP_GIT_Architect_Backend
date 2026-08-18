@@ -16,6 +16,49 @@ import type {
   RepositoryContext,
 } from "../types/agent-context.js";
 
+const isRepositoryContext =
+  (
+    repository:
+      unknown,
+  ): repository is RepositoryContext => {
+    if (
+      !repository ||
+      typeof repository !== "object"
+    ) {
+      return false;
+    }
+
+    const candidate =
+      repository as Partial<
+        RepositoryContext
+      >;
+
+    return (
+      typeof candidate.id ===
+        "number" &&
+      typeof candidate.owner ===
+        "string" &&
+      candidate.owner.trim()
+        .length > 0 &&
+      typeof candidate.repo ===
+        "string" &&
+      candidate.repo.trim()
+        .length > 0 &&
+      typeof candidate.fullName ===
+        "string" &&
+      candidate.fullName.trim()
+        .length > 0 &&
+      typeof candidate.defaultBranch ===
+        "string" &&
+      candidate.defaultBranch.trim()
+        .length > 0 &&
+      typeof candidate.isPrivate ===
+        "boolean" &&
+      typeof candidate.url ===
+        "string"
+    );
+  };
+
 
 /*
  * ========================================
@@ -175,8 +218,18 @@ export const getSessionRepository =
           },
         );
 
-    return session
-      ?.repository;
+    const repository =
+      session?.repository;
+
+    if (
+      !isRepositoryContext(
+        repository,
+      )
+    ) {
+      return undefined;
+    }
+
+    return repository;
   };
 
 

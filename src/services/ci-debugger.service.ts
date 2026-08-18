@@ -39,7 +39,7 @@ export const debugWorkflowRun =
     runId: number,
   ): Promise<CIDebugResult> => {
     const session =
-      getSessionRecord(
+      await getSessionRecord(
         sessionId,
       );
 
@@ -50,7 +50,7 @@ export const debugWorkflowRun =
     }
 
     const repository =
-      getSessionRepository(
+      await getSessionRepository(
         sessionId,
       );
 

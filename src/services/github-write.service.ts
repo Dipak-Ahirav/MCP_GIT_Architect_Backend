@@ -90,7 +90,7 @@ export const requestGitHubWrite =
     instruction: string,
   ) => {
     const session =
-      getSessionRecord(
+      await getSessionRecord(
         sessionId,
       );
 
@@ -101,7 +101,7 @@ export const requestGitHubWrite =
     }
 
     const repository =
-      getSessionRepository(
+      await getSessionRepository(
         sessionId,
       );
 

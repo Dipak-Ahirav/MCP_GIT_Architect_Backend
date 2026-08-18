@@ -71,7 +71,7 @@ export const reviewPullRequest =
     PRReviewResult
   > => {
     const session =
-      getSessionRecord(
+      await getSessionRecord(
         sessionId,
       );
 
@@ -82,7 +82,7 @@ export const reviewPullRequest =
     }
 
     const repository =
-      getSessionRepository(
+      await getSessionRepository(
         sessionId,
       );
 
