@@ -146,7 +146,7 @@ export const requestGitHubWrite =
           "approval_required" as const,
 
         approvalId:
-          approval.approvalId,
+          approval._id,
 
         repository:
           repository.fullName,

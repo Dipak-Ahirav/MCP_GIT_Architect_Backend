@@ -26,6 +26,8 @@ export const createPendingApproval =
       _id:
         approvalId,
 
+      approvalId,
+
       sessionId,
 
       serializedState,
