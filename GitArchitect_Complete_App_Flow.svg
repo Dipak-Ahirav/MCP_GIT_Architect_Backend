@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .page { fill: #f6f8fc; }
+      .title { font: 700 44px Arial, sans-serif; fill: #07142b; }
+      .subtitle { font: 400 23px Arial, sans-serif; fill: #52627a; }
+      .lane-title { font: 700 20px Arial, sans-serif; fill: #34445c; text-transform: uppercase; letter-spacing: 1px; }
+      .box { fill: #ffffff; stroke: #d5deeb; stroke-width: 2; rx: 16; }
+      .frontend { fill: #eef5ff; stroke: #73a7f7; }
+      .backend { fill: #f2edff; stroke: #8974ed; }
+      .database { fill: #fff0f0; stroke: #ec8686; }
+      .agent { fill: #ecfbf3; stroke: #58c985; }
+      .github { fill: #eef2f7; stroke: #95a3b8; }
+      .approval { fill: #fff9df; stroke: #e1b744; }
+      .box-title { font: 700 24px Arial, sans-serif; fill: #06142d; }
+      .box-body { font: 400 18px Arial, sans-serif; fill: #43536b; }
+      .pill { fill: #ffffff; stroke: #d5deeb; stroke-width: 1.5; rx: 20; }
+      .pill-text { font: 700 17px Arial, sans-serif; fill: #21324a; }
+      .arrow { stroke: #5c6b80; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .arrow-soft { stroke: #8a97aa; stroke-width: 2.5; fill: none; marker-end: url(#arrow); stroke-dasharray: 8 7; }
+      .note { font: 700 20px Arial, sans-serif; fill: #0c5730; }
+      .note-box { fill: #dcfce7; stroke: #79d99b; stroke-width: 2; rx: 16; }
+      .small { font: 400 16px Arial, sans-serif; fill: #607089; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5c6b80"/>
+    </marker>
+  </defs>
+
+  <rect class="page" width="1920" height="1080"/>
+
+  <text class="title" x="80" y="86">GitArchitect Application Flow</text>
+  <text class="subtitle" x="80" y="124">High-level end-to-end flow from Angular UI to backend agents, GitHub, and human-approved actions.</text>
+
+  <text class="lane-title" x="80" y="196">Setup Flow</text>
+
+  <rect class="box frontend" x="80" y="230" width="290" height="135"/>
+  <text class="box-title" x="110" y="278">1. Angular UI</text>
+  <text class="box-body" x="110" y="312">User opens GitArchitect</text>
+  <text class="box-body" x="110" y="338">and starts a session.</text>
+
+  <rect class="box backend" x="455" y="230" width="310" height="135"/>
+  <text class="box-title" x="485" y="278">2. Express API</text>
+  <text class="box-body" x="485" y="312">Creates session and</text>
+  <text class="box-body" x="485" y="338">handles API requests.</text>
+
+  <rect class="box database" x="850" y="230" width="310" height="135"/>
+  <text class="box-title" x="880" y="278">3. MongoDB</text>
+  <text class="box-body" x="880" y="312">Stores sessionId and</text>
+  <text class="box-body" x="880" y="338">selected repository.</text>
+
+  <rect class="box github" x="1245" y="230" width="310" height="135"/>
+  <text class="box-title" x="1275" y="278">4. GitHub</text>
+  <text class="box-body" x="1275" y="312">Loads repos, issues, PRs,</text>
+  <text class="box-body" x="1275" y="338">checks, files, and logs.</text>
+
+  <path class="arrow" d="M 370 298 L 455 298"/>
+  <path class="arrow" d="M 765 298 L 850 298"/>
+  <path class="arrow" d="M 1160 298 L 1245 298"/>
+
+  <rect class="note-box" x="80" y="405" width="1475" height="70"/>
+  <text class="note" x="110" y="449">Key point: repository selection is the central context. Every AI workflow uses sessionId to resolve the selected repository before analysis.</text>
+
+  <text class="lane-title" x="80" y="548">Main Product Workflows</text>
+
+  <rect class="box frontend" x="80" y="585" width="300" height="145"/>
+  <text class="box-title" x="110" y="634">Repository</text>
+  <text class="box-body" x="110" y="670">Select the GitHub repo</text>
+  <text class="box-body" x="110" y="698">GitArchitect should use.</text>
+
+  <rect class="box frontend" x="430" y="585" width="300" height="145"/>
+  <text class="box-title" x="460" y="634">AI Chat</text>
+  <text class="box-body" x="460" y="670">Ask questions about</text>
+  <text class="box-body" x="460" y="698">the active repository.</text>
+
+  <rect class="box frontend" x="780" y="585" width="300" height="145"/>
+  <text class="box-title" x="810" y="634">Repo Intelligence</text>
+  <text class="box-body" x="810" y="670">Architecture, security,</text>
+  <text class="box-body" x="810" y="698">testing, and stack report.</text>
+
+  <rect class="box frontend" x="1130" y="585" width="300" height="145"/>
+  <text class="box-title" x="1160" y="634">PR Review</text>
+  <text class="box-body" x="1160" y="670">Review pull request risk,</text>
+  <text class="box-body" x="1160" y="698">score, findings, checks.</text>
+
+  <rect class="box frontend" x="1480" y="585" width="300" height="145"/>
+  <text class="box-title" x="1510" y="634">Issue Analyzer</text>
+  <text class="box-body" x="1510" y="670">Convert issue into</text>
+  <text class="box-body" x="1510" y="698">requirements and plan.</text>
+
+  <rect class="box frontend" x="255" y="800" width="300" height="145"/>
+  <text class="box-title" x="285" y="849">CI Debugger</text>
+  <text class="box-body" x="285" y="885">Analyze failed Actions</text>
+  <text class="box-body" x="285" y="913">runs and root cause.</text>
+
+  <rect class="box approval" x="605" y="800" width="300" height="145"/>
+  <text class="box-title" x="635" y="849">GitHub Actions</text>
+  <text class="box-body" x="635" y="885">Prepare write actions</text>
+  <text class="box-body" x="635" y="913">with human approval.</text>
+
+  <rect class="box agent" x="1040" y="800" width="360" height="145"/>
+  <text class="box-title" x="1070" y="849">OpenAI Agents</text>
+  <text class="box-body" x="1070" y="885">Inspect repository evidence</text>
+  <text class="box-body" x="1070" y="913">and return structured JSON.</text>
+
+  <rect class="box backend" x="1450" y="800" width="330" height="145"/>
+  <text class="box-title" x="1480" y="849">UI Result Cards</text>
+  <text class="box-body" x="1480" y="885">Render summaries, scores,</text>
+  <text class="box-body" x="1480" y="913">risks, plans, files, limits.</text>
+
+  <path class="arrow-soft" d="M 230 730 C 230 780, 300 780, 405 800"/>
+  <path class="arrow-soft" d="M 580 730 C 655 760, 840 760, 1040 835"/>
+  <path class="arrow-soft" d="M 930 730 C 990 755, 1095 780, 1170 800"/>
+  <path class="arrow-soft" d="M 1280 730 C 1265 755, 1245 780, 1228 800"/>
+  <path class="arrow-soft" d="M 1630 730 C 1580 765, 1465 790, 1400 835"/>
+  <path class="arrow" d="M 555 872 L 605 872"/>
+  <path class="arrow" d="M 905 872 L 1040 872"/>
+  <path class="arrow" d="M 1400 872 L 1450 872"/>
+
+  <text class="lane-title" x="80" y="1010">Backend Integration Summary</text>
+  <rect class="pill" x="80" y="1028" width="300" height="38"/>
+  <text class="pill-text" x="106" y="1053">/api/v1/agent/sessions</text>
+
+  <rect class="pill" x="405" y="1028" width="380" height="38"/>
+  <text class="pill-text" x="431" y="1053">/sessions/:sessionId/repository</text>
+
+  <rect class="pill" x="810" y="1028" width="310" height="38"/>
+  <text class="pill-text" x="836" y="1053">/repository-analysis</text>
+
+  <rect class="pill" x="1145" y="1028" width="245" height="38"/>
+  <text class="pill-text" x="1171" y="1053">/pull-requests</text>
+
+  <rect class="pill" x="1415" y="1028" width="170" height="38"/>
+  <text class="pill-text" x="1441" y="1053">/issues</text>
+
+  <rect class="pill" x="1610" y="1028" width="230" height="38"/>
+  <text class="pill-text" x="1636" y="1053">/github/write</text>
+</svg>
