@@ -1,0 +1,795 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/cm08kk",
+    "id": "cm08kk",
+    "slide": 16,
+    "layoutId": "c5e919e1-f4cb-4f57-aa2a-8b0f6985a5b9",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2cf75753-e661-435d-9622-7c04c17c2941",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c5e919e1-f4cb-4f57-aa2a-8b0f6985a5b9",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2cf75753-e661-435d-9622-7c04c17c2941",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2cf75753-e661-435d-9622-7c04c17c2941",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/or6dwfex",
+      "id": "1",
+      "bbox": [
+        56,
+        30,
+        460,
+        22
+      ],
+      "geometry": "rect",
+      "text": "GITARCHITECT UI WALKTHROUGH",
+      "textPreview": "GITARCHITECT UI WALKTHROUGH",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GITARCHITECT UI WALKTHROUGH"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GITARCHITECT UI WALKTHROUGH",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#536179",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GITARCHITECT UI WALKTHROUGH",
+              "fontSize": 14,
+              "color": "#536179",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3qxc3udc",
+      "id": "2",
+      "bbox": [
+        56,
+        62,
+        1160,
+        48
+      ],
+      "geometry": "rect",
+      "text": "Presentation takeaway",
+      "textPreview": "Presentation takeaway",
+      "resolvedFontSize": 36,
+      "resolvedTextStyle": {
+        "fontSize": 36,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Presentation takeaway"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Presentation takeaway",
+          "resolvedTextStyle": {
+            "fontSize": 36,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Presentation takeaway",
+              "fontSize": 36,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2povupwr",
+      "id": "3",
+      "bbox": [
+        56,
+        112,
+        1080,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Every workflow is session-scoped, repository-aware, and evidence-based.",
+      "textPreview": "Every workflow is session-scoped, repository-aware, and evidence-based.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Every workflow is session-scoped, repository-aware, and evidence-based."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Every workflow is session-scoped, repository-aware, and evidence-based.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Every workflow is session-scoped, repository-aware, and evidence-based.",
+              "fontSize": 18,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1ofu1kv6",
+      "id": "4",
+      "bbox": [
+        94,
+        190,
+        510,
+        30
+      ],
+      "geometry": "rect",
+      "text": "What to emphasize to the team",
+      "textPreview": "What to emphasize to the team",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "What to emphasize to the team"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "What to emphasize to the team",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "What to emphasize to the team",
+              "fontSize": 22,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gn6dsfe1",
+      "id": "5",
+      "bbox": [
+        94,
+        232,
+        510,
+        258
+      ],
+      "geometry": "rect",
+      "text": "• Repository selection is the key setup step because it populates backend context.\n• Analysis pages now render nested backend responses correctly.\n• PR Review and Issue Analyzer expose both findings and limitations instead of hiding uncertainty.\n• GitHub writes remain controlled by human approval before mutation tools execute.",
+      "textPreview": "• Repository selection is the key setup step because it populates backend context. | • Analysis pages now render nested backend responses...",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 7,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• Repository selection is the key setup step because it populates"
+          },
+          {
+            "index": 2,
+            "text": "backend context."
+          },
+          {
+            "index": 3,
+            "text": "• Analysis pages now render nested backend responses correctly."
+          },
+          {
+            "index": 4,
+            "text": "• PR Review and Issue Analyzer expose both findings and limitations"
+          },
+          {
+            "index": 5,
+            "text": "instead of hiding uncertainty."
+          },
+          {
+            "index": 6,
+            "text": "• GitHub writes remain controlled by human approval before mutation"
+          },
+          {
+            "index": 7,
+            "text": "tools execute."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• Repository selection is the key setup step because it populates backend context.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Repository selection is the key setup step because it populates backend context.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• Analysis pages now render nested backend responses correctly.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Analysis pages now render nested backend responses correctly.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• PR Review and Issue Analyzer expose both findings and limitations instead of hiding uncertainty.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• PR Review and Issue Analyzer expose both findings and limitations instead of hiding uncertainty.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• GitHub writes remain controlled by human approval before mutation tools execute.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• GitHub writes remain controlled by human approval before mutation tools execute.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fmxczadg",
+      "id": "6",
+      "bbox": [
+        700,
+        190,
+        460,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Backend story in one line",
+      "textPreview": "Backend story in one line",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Backend story in one line"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Backend story in one line",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Backend story in one line",
+              "fontSize": 22,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/elovq5wv",
+      "id": "7",
+      "bbox": [
+        700,
+        232,
+        460,
+        258
+      ],
+      "geometry": "rect",
+      "text": "• Angular sends workflow input plus sessionId.\n• Express resolves the selected repository from MongoDB.\n• OpenAI agents inspect GitHub through MCP.\n• Structured responses return to Angular cards and detail sections.",
+      "textPreview": "• Angular sends workflow input plus sessionId. | • Express resolves the selected repository from MongoDB. | • OpenAI agents inspect GitHu...",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• Angular sends workflow input plus sessionId."
+          },
+          {
+            "index": 2,
+            "text": "• Express resolves the selected repository from MongoDB."
+          },
+          {
+            "index": 3,
+            "text": "• OpenAI agents inspect GitHub through MCP."
+          },
+          {
+            "index": 4,
+            "text": "• Structured responses return to Angular cards and detail"
+          },
+          {
+            "index": 5,
+            "text": "sections."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• Angular sends workflow input plus sessionId.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Angular sends workflow input plus sessionId.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• Express resolves the selected repository from MongoDB.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Express resolves the selected repository from MongoDB.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• OpenAI agents inspect GitHub through MCP.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• OpenAI agents inspect GitHub through MCP.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• Structured responses return to Angular cards and detail sections.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Structured responses return to Angular cards and detail sections.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lkjed4vq",
+      "id": "8",
+      "bbox": [
+        150,
+        545,
+        980,
+        76
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#DCFCE7",
+      "lineColor": "#86EFAC",
+      "lineWidth": 1
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0jad4je5",
+      "id": "9",
+      "bbox": [
+        178,
+        566,
+        920,
+        34
+      ],
+      "geometry": "rect",
+      "text": "Demo flow: Dashboard → Repositories → PR Review → Issue Analyzer → GitHub Actions approval.",
+      "textPreview": "Demo flow: Dashboard → Repositories → PR Review → Issue Analyzer → GitHub Actions approval.",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "fontSize": 24,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Demo flow: Dashboard → Repositories → PR Review → Issue Analyzer → GitHub Actions"
+          },
+          {
+            "index": 2,
+            "text": "approval."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Demo flow: Dashboard → Repositories → PR Review → Issue Analyzer → GitHub Actions approval.",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Demo flow: Dashboard → Repositories → PR Review → Issue Analyzer → GitHub Actions approval.",
+              "fontSize": 24,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/694ruhk7",
+      "id": "10",
+      "bbox": [
+        56,
+        682,
+        360,
+        20
+      ],
+      "geometry": "rect",
+      "text": "GitArchitect presentation | 16",
+      "textPreview": "GitArchitect presentation | 16",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GitArchitect presentation | 16"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GitArchitect presentation | 16",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GitArchitect presentation | 16",
+              "fontSize": 13,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

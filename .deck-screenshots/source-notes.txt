@@ -1,0 +1,14 @@
+dashboard: C:/Users/DIPAKA~1/AppData/Local/Temp/codex-clipboard-22267948-5d7d-4e32-a769-b5d7ba744ef7.png
+repositories: C:/Users/DIPAKA~1/AppData/Local/Temp/codex-clipboard-eb4c7be8-4cff-42d4-b551-50db69e44572.png
+chat: C:/Users/DIPAKA~1/AppData/Local/Temp/codex-clipboard-b4078371-dc8e-4c57-aa32-23747dc3cf6c.png
+repoIntelligenceOverview: C:/Users/DIPAKA~1/AppData/Local/Temp/codex-clipboard-3fec33c6-10d2-4e89-abe1-c80e53e1b05e.png
+repoIntelligenceFindings: C:/Users/DIPAKA~1/AppData/Local/Temp/codex-clipboard-24b8ceec-af59-48b0-8b90-f50a9eb1a5b8.png
+repoIntelligenceRecommendations: C:/Users/DIPAKA~1/AppData/Local/Temp/codex-clipboard-cfe6bfb4-cacb-4f63-93e7-342b463b4c6a.png
+prTop: C:/Users/DIPAKA~1/AppData/Local/Temp/codex-clipboard-9405c371-76b2-4a48-b19d-3f6dfa3c37ea.png
+prDetails: C:/Users/DIPAKA~1/AppData/Local/Temp/codex-clipboard-a1ef119c-4f60-4bd5-80b6-2a326e8e27ca.png
+issueTop: C:/Users/DIPAKA~1/AppData/Local/Temp/codex-clipboard-fea1cfd7-ade2-43b7-81fd-f10e2f405837.png
+issueReqs: C:/Users/DIPAKA~1/AppData/Local/Temp/codex-clipboard-45238fc8-8222-4d03-bffd-eb021f6d4990.png
+issuePlan: C:/Users/DIPAKA~1/AppData/Local/Temp/codex-clipboard-9734fec6-c3d1-49af-b832-09c0b01fb495.png
+issueRisks: C:/Users/DIPAKA~1/AppData/Local/Temp/codex-clipboard-35bea36d-f33d-4974-9134-aef53987d983.png
+ciDebugger: C:/Users/DIPAKA~1/AppData/Local/Temp/codex-clipboard-adb709c3-420e-4c36-98a0-aa2db1ec5750.png
+githubWrites: C:/Users/DIPAKA~1/AppData/Local/Temp/codex-clipboard-fdb76072-0d24-4904-9475-9ff122e51458.png

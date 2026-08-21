@@ -1,0 +1,707 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/zaj6h9",
+    "id": "zaj6h9",
+    "slide": 2,
+    "layoutId": "c5e919e1-f4cb-4f57-aa2a-8b0f6985a5b9",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2cf75753-e661-435d-9622-7c04c17c2941",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c5e919e1-f4cb-4f57-aa2a-8b0f6985a5b9",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2cf75753-e661-435d-9622-7c04c17c2941",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2cf75753-e661-435d-9622-7c04c17c2941",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4zq9s7ah",
+      "id": "1",
+      "bbox": [
+        56,
+        30,
+        460,
+        22
+      ],
+      "geometry": "rect",
+      "text": "GITARCHITECT UI WALKTHROUGH",
+      "textPreview": "GITARCHITECT UI WALKTHROUGH",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GITARCHITECT UI WALKTHROUGH"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GITARCHITECT UI WALKTHROUGH",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#536179",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GITARCHITECT UI WALKTHROUGH",
+              "fontSize": 14,
+              "color": "#536179",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3yh8j29w",
+      "id": "2",
+      "bbox": [
+        56,
+        62,
+        1160,
+        48
+      ],
+      "geometry": "rect",
+      "text": "Dashboard confirms the working context",
+      "textPreview": "Dashboard confirms the working context",
+      "resolvedFontSize": 36,
+      "resolvedTextStyle": {
+        "fontSize": 36,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Dashboard confirms the working context"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Dashboard confirms the working context",
+          "resolvedTextStyle": {
+            "fontSize": 36,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Dashboard confirms the working context",
+              "fontSize": 36,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2x8rqxsb",
+      "id": "3",
+      "bbox": [
+        56,
+        112,
+        1080,
+        30
+      ],
+      "geometry": "rect",
+      "text": "The team can quickly see connection, session, repository, and available workflows.",
+      "textPreview": "The team can quickly see connection, session, repository, and available workflows.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The team can quickly see connection, session, repository, and available workflows."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The team can quickly see connection, session, repository, and available workflows.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The team can quickly see connection, session, repository, and available workflows.",
+              "fontSize": 18,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d4japwry",
+      "id": "4",
+      "bbox": [
+        46,
+        162,
+        726,
+        446
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D8DEE9",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/98vm9kfi",
+      "id": "5",
+      "bbox": [
+        54,
+        170,
+        710,
+        430
+      ],
+      "alt": "GitArchitect UI screenshot",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "0c96be90-e111-4397-8d34-bb6c98f7f78a",
+        "contentType": "image/png",
+        "byteLength": 83968
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r21snm98",
+      "id": "6",
+      "bbox": [
+        815,
+        178,
+        385,
+        30
+      ],
+      "geometry": "rect",
+      "text": "What this screen shows",
+      "textPreview": "What this screen shows",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "What this screen shows"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "What this screen shows",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "What this screen shows",
+              "fontSize": 22,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q18ruhsn",
+      "id": "7",
+      "bbox": [
+        815,
+        220,
+        385,
+        136
+      ],
+      "geometry": "rect",
+      "text": "• GitHub Connected status confirms the GitHub token is usable.\n• Session is Active and repository is already selected.\n• Workflow tiles provide navigation to analysis and GitHub action pages.",
+      "textPreview": "• GitHub Connected status confirms the GitHub token is usable. | • Session is Active and repository is already selected. | • Workflow til...",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• GitHub Connected status confirms the GitHub"
+          },
+          {
+            "index": 2,
+            "text": "token is usable."
+          },
+          {
+            "index": 3,
+            "text": "• Session is Active and repository is already selected."
+          },
+          {
+            "index": 4,
+            "text": "• Workflow tiles provide navigation to analysis and"
+          },
+          {
+            "index": 5,
+            "text": "GitHub action pages."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• GitHub Connected status confirms the GitHub token is usable.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• GitHub Connected status confirms the GitHub token is usable.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• Session is Active and repository is already selected.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Session is Active and repository is already selected.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• Workflow tiles provide navigation to analysis and GitHub action pages.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Workflow tiles provide navigation to analysis and GitHub action pages.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t8fqdsbu",
+      "id": "8",
+      "bbox": [
+        815,
+        405,
+        385,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Backend integration",
+      "textPreview": "Backend integration",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Backend integration"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Backend integration",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Backend integration",
+              "fontSize": 22,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s769kna9",
+      "id": "9",
+      "bbox": [
+        815,
+        447,
+        385,
+        128
+      ],
+      "geometry": "rect",
+      "text": "• GET /api/v1/github/auth/status checks GitHub connectivity.\n• Session id is stored in AppSessionService and localStorage.\n• Repository context is reused by all repository-aware workflows.",
+      "textPreview": "• GET /api/v1/github/auth/status checks GitHub connectivity. | • Session id is stored in AppSessionService and localStorage. | • Reposito...",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• GET /api/v1/github/auth/status checks GitHub"
+          },
+          {
+            "index": 2,
+            "text": "connectivity."
+          },
+          {
+            "index": 3,
+            "text": "• Session id is stored in AppSessionService and"
+          },
+          {
+            "index": 4,
+            "text": "localStorage."
+          },
+          {
+            "index": 5,
+            "text": "• Repository context is reused by all"
+          },
+          {
+            "index": 6,
+            "text": "repository-aware workflows."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• GET /api/v1/github/auth/status checks GitHub connectivity.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• GET /api/v1/github/auth/status checks GitHub connectivity.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• Session id is stored in AppSessionService and localStorage.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Session id is stored in AppSessionService and localStorage.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• Repository context is reused by all repository-aware workflows.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Repository context is reused by all repository-aware workflows.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6dobmx4b",
+      "id": "10",
+      "bbox": [
+        56,
+        682,
+        360,
+        20
+      ],
+      "geometry": "rect",
+      "text": "GitArchitect presentation | 2",
+      "textPreview": "GitArchitect presentation | 2",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GitArchitect presentation | 2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GitArchitect presentation | 2",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GitArchitect presentation | 2",
+              "fontSize": 13,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

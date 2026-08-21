@@ -1,0 +1,707 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/djsazx",
+    "id": "djsazx",
+    "slide": 6,
+    "layoutId": "c5e919e1-f4cb-4f57-aa2a-8b0f6985a5b9",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2cf75753-e661-435d-9622-7c04c17c2941",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c5e919e1-f4cb-4f57-aa2a-8b0f6985a5b9",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2cf75753-e661-435d-9622-7c04c17c2941",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2cf75753-e661-435d-9622-7c04c17c2941",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a5c3mxwz",
+      "id": "1",
+      "bbox": [
+        56,
+        30,
+        460,
+        22
+      ],
+      "geometry": "rect",
+      "text": "GITARCHITECT UI WALKTHROUGH",
+      "textPreview": "GITARCHITECT UI WALKTHROUGH",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GITARCHITECT UI WALKTHROUGH"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GITARCHITECT UI WALKTHROUGH",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#536179",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GITARCHITECT UI WALKTHROUGH",
+              "fontSize": 14,
+              "color": "#536179",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x83mxcfa",
+      "id": "2",
+      "bbox": [
+        56,
+        62,
+        1160,
+        48
+      ],
+      "geometry": "rect",
+      "text": "Repository Intelligence exposes strengths and risks",
+      "textPreview": "Repository Intelligence exposes strengths and risks",
+      "resolvedFontSize": 36,
+      "resolvedTextStyle": {
+        "fontSize": 36,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Repository Intelligence exposes strengths and risks"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Repository Intelligence exposes strengths and risks",
+          "resolvedTextStyle": {
+            "fontSize": 36,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Repository Intelligence exposes strengths and risks",
+              "fontSize": 36,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7ulo7ep",
+      "id": "3",
+      "bbox": [
+        56,
+        112,
+        1080,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Detailed findings connect recommendations to concrete repository evidence.",
+      "textPreview": "Detailed findings connect recommendations to concrete repository evidence.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Detailed findings connect recommendations to concrete repository evidence."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Detailed findings connect recommendations to concrete repository evidence.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Detailed findings connect recommendations to concrete repository evidence.",
+              "fontSize": 18,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/n214r2x8",
+      "id": "4",
+      "bbox": [
+        46,
+        162,
+        726,
+        446
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D8DEE9",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/72tozyx4",
+      "id": "5",
+      "bbox": [
+        54,
+        170,
+        710,
+        430
+      ],
+      "alt": "GitArchitect UI screenshot",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "694cf5f6-217f-4c43-afbc-5e67fa262201",
+        "contentType": "image/png",
+        "byteLength": 97376
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/94jmtsfe",
+      "id": "6",
+      "bbox": [
+        815,
+        178,
+        385,
+        30
+      ],
+      "geometry": "rect",
+      "text": "What this screen shows",
+      "textPreview": "What this screen shows",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "What this screen shows"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "What this screen shows",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "What this screen shows",
+              "fontSize": 22,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o3alk7et",
+      "id": "7",
+      "bbox": [
+        815,
+        220,
+        385,
+        136
+      ],
+      "geometry": "rect",
+      "text": "• Strengths show what is already working in the repo.\n• Findings are grouped by severity and category.\n• Each finding includes evidence paths so the team can verify the claim.",
+      "textPreview": "• Strengths show what is already working in the repo. | • Findings are grouped by severity and category. | • Each finding includes eviden...",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• Strengths show what is already working in the"
+          },
+          {
+            "index": 2,
+            "text": "repo."
+          },
+          {
+            "index": 3,
+            "text": "• Findings are grouped by severity and category."
+          },
+          {
+            "index": 4,
+            "text": "• Each finding includes evidence paths so the team"
+          },
+          {
+            "index": 5,
+            "text": "can verify the claim."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• Strengths show what is already working in the repo.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Strengths show what is already working in the repo.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• Findings are grouped by severity and category.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Findings are grouped by severity and category.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• Each finding includes evidence paths so the team can verify the claim.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Each finding includes evidence paths so the team can verify the claim.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ze14nixc",
+      "id": "8",
+      "bbox": [
+        815,
+        405,
+        385,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Backend integration",
+      "textPreview": "Backend integration",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Backend integration"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Backend integration",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Backend integration",
+              "fontSize": 22,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/eds3edwr",
+      "id": "9",
+      "bbox": [
+        815,
+        447,
+        385,
+        128
+      ],
+      "geometry": "rect",
+      "text": "• Specialist agents inspect architecture, code organization, security, scalability, and testing.\n• Agents return structured findings with severity, category, title, and evidence.\n• Frontend renders each finding as a readable evidence card.",
+      "textPreview": "• Specialist agents inspect architecture, code organization, security, scalability, and testing. | • Agents return structured findings wi...",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• Specialist agents inspect architecture, code"
+          },
+          {
+            "index": 2,
+            "text": "organization, security, scalability, and testing."
+          },
+          {
+            "index": 3,
+            "text": "• Agents return structured findings with severity,"
+          },
+          {
+            "index": 4,
+            "text": "category, title, and evidence."
+          },
+          {
+            "index": 5,
+            "text": "• Frontend renders each finding as a readable"
+          },
+          {
+            "index": 6,
+            "text": "evidence card."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• Specialist agents inspect architecture, code organization, security, scalability, and testing.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Specialist agents inspect architecture, code organization, security, scalability, and testing.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• Agents return structured findings with severity, category, title, and evidence.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Agents return structured findings with severity, category, title, and evidence.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• Frontend renders each finding as a readable evidence card.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Frontend renders each finding as a readable evidence card.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ozax4v6p",
+      "id": "10",
+      "bbox": [
+        56,
+        682,
+        360,
+        20
+      ],
+      "geometry": "rect",
+      "text": "GitArchitect presentation | 6",
+      "textPreview": "GitArchitect presentation | 6",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GitArchitect presentation | 6"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GitArchitect presentation | 6",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GitArchitect presentation | 6",
+              "fontSize": 13,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

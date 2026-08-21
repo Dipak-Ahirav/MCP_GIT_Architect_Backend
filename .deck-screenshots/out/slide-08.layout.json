@@ -1,0 +1,711 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/7m0w7l",
+    "id": "7m0w7l",
+    "slide": 8,
+    "layoutId": "c5e919e1-f4cb-4f57-aa2a-8b0f6985a5b9",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2cf75753-e661-435d-9622-7c04c17c2941",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c5e919e1-f4cb-4f57-aa2a-8b0f6985a5b9",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2cf75753-e661-435d-9622-7c04c17c2941",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2cf75753-e661-435d-9622-7c04c17c2941",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ony147uh",
+      "id": "1",
+      "bbox": [
+        56,
+        30,
+        460,
+        22
+      ],
+      "geometry": "rect",
+      "text": "GITARCHITECT UI WALKTHROUGH",
+      "textPreview": "GITARCHITECT UI WALKTHROUGH",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GITARCHITECT UI WALKTHROUGH"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GITARCHITECT UI WALKTHROUGH",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#536179",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GITARCHITECT UI WALKTHROUGH",
+              "fontSize": 14,
+              "color": "#536179",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3mp0v2tw",
+      "id": "2",
+      "bbox": [
+        56,
+        62,
+        1160,
+        48
+      ],
+      "geometry": "rect",
+      "text": "PR Review summarizes the pull request decision",
+      "textPreview": "PR Review summarizes the pull request decision",
+      "resolvedFontSize": 36,
+      "resolvedTextStyle": {
+        "fontSize": 36,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "PR Review summarizes the pull request decision"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "PR Review summarizes the pull request decision",
+          "resolvedTextStyle": {
+            "fontSize": 36,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PR Review summarizes the pull request decision",
+              "fontSize": 36,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2lgj2xcb",
+      "id": "3",
+      "bbox": [
+        56,
+        112,
+        1080,
+        30
+      ],
+      "geometry": "rect",
+      "text": "The top section shows the decision fields the team needs first.",
+      "textPreview": "The top section shows the decision fields the team needs first.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The top section shows the decision fields the team needs first."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The top section shows the decision fields the team needs first.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The top section shows the decision fields the team needs first.",
+              "fontSize": 18,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dcr21cby",
+      "id": "4",
+      "bbox": [
+        46,
+        162,
+        726,
+        446
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D8DEE9",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/1kjmtofe",
+      "id": "5",
+      "bbox": [
+        54,
+        170,
+        710,
+        430
+      ],
+      "alt": "GitArchitect UI screenshot",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "6ca9b69c-978c-4eb5-a6a8-c2fa06c50caa",
+        "contentType": "image/png",
+        "byteLength": 79685
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bq9kzmts",
+      "id": "6",
+      "bbox": [
+        815,
+        178,
+        385,
+        30
+      ],
+      "geometry": "rect",
+      "text": "What this screen shows",
+      "textPreview": "What this screen shows",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "What this screen shows"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "What this screen shows",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "What this screen shows",
+              "fontSize": 22,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qp0j6hc7",
+      "id": "7",
+      "bbox": [
+        815,
+        220,
+        385,
+        136
+      ],
+      "geometry": "rect",
+      "text": "• Input accepts a PR number, then renders PR #, status, title, author, and branches.\n• Recommendation, risk, overall score, changed files, additions, deletions, and check status are visible.\n• Summary explains the practical impact of the PR.",
+      "textPreview": "• Input accepts a PR number, then renders PR #, status, title, author, and branches. | • Recommendation, risk, overall score, changed fil...",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• Input accepts a PR number, then renders PR #,"
+          },
+          {
+            "index": 2,
+            "text": "status, title, author, and branches."
+          },
+          {
+            "index": 3,
+            "text": "• Recommendation, risk, overall score, changed files,"
+          },
+          {
+            "index": 4,
+            "text": "additions, deletions, and check status are visible."
+          },
+          {
+            "index": 5,
+            "text": "• Summary explains the practical impact of the PR."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• Input accepts a PR number, then renders PR #, status, title, author, and branches.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Input accepts a PR number, then renders PR #, status, title, author, and branches.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• Recommendation, risk, overall score, changed files, additions, deletions, and check status are visible.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Recommendation, risk, overall score, changed files, additions, deletions, and check status are visible.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• Summary explains the practical impact of the PR.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Summary explains the practical impact of the PR.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lgb25wbu",
+      "id": "8",
+      "bbox": [
+        815,
+        405,
+        385,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Backend integration",
+      "textPreview": "Backend integration",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Backend integration"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Backend integration",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Backend integration",
+              "fontSize": 22,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0f21cru9",
+      "id": "9",
+      "bbox": [
+        815,
+        447,
+        385,
+        128
+      ],
+      "geometry": "rect",
+      "text": "• POST /api/v1/agent/sessions/:sessionId/pull-requests/:pullNumber/review.\n• Backend returns { repository, pullNumber, overallScore, review }.\n• Frontend unwraps response.data.review and displays nested pullRequest fields.",
+      "textPreview": "• POST /api/v1/agent/sessions/:sessionId/pull-requests/:pullNumber/review. | • Backend returns { repository, pullNumber, overallScore, re...",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 7,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• POST"
+          },
+          {
+            "index": 2,
+            "text": "/api/v1/agent/sessions/:sessionId/pull-requests/:pul"
+          },
+          {
+            "index": 3,
+            "text": "lNumber/review."
+          },
+          {
+            "index": 4,
+            "text": "• Backend returns { repository, pullNumber,"
+          },
+          {
+            "index": 5,
+            "text": "overallScore, review }."
+          },
+          {
+            "index": 6,
+            "text": "• Frontend unwraps response.data.review and"
+          },
+          {
+            "index": 7,
+            "text": "displays nested pullRequest fields."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• POST /api/v1/agent/sessions/:sessionId/pull-requests/:pullNumber/review.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• POST /api/v1/agent/sessions/:sessionId/pull-requests/:pullNumber/review.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• Backend returns { repository, pullNumber, overallScore, review }.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Backend returns { repository, pullNumber, overallScore, review }.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• Frontend unwraps response.data.review and displays nested pullRequest fields.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Frontend unwraps response.data.review and displays nested pullRequest fields.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ul4zuxcj",
+      "id": "10",
+      "bbox": [
+        56,
+        682,
+        360,
+        20
+      ],
+      "geometry": "rect",
+      "text": "GitArchitect presentation | 8",
+      "textPreview": "GitArchitect presentation | 8",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GitArchitect presentation | 8"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GitArchitect presentation | 8",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GitArchitect presentation | 8",
+              "fontSize": 13,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

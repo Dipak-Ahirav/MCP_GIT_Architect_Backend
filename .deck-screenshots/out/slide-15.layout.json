@@ -1,0 +1,715 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/o7gk2t",
+    "id": "o7gk2t",
+    "slide": 15,
+    "layoutId": "c5e919e1-f4cb-4f57-aa2a-8b0f6985a5b9",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2cf75753-e661-435d-9622-7c04c17c2941",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "c5e919e1-f4cb-4f57-aa2a-8b0f6985a5b9",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2cf75753-e661-435d-9622-7c04c17c2941",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2cf75753-e661-435d-9622-7c04c17c2941",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gfypozi1",
+      "id": "1",
+      "bbox": [
+        56,
+        30,
+        460,
+        22
+      ],
+      "geometry": "rect",
+      "text": "GITARCHITECT UI WALKTHROUGH",
+      "textPreview": "GITARCHITECT UI WALKTHROUGH",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GITARCHITECT UI WALKTHROUGH"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GITARCHITECT UI WALKTHROUGH",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#536179",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GITARCHITECT UI WALKTHROUGH",
+              "fontSize": 14,
+              "color": "#536179",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fepofuhg",
+      "id": "2",
+      "bbox": [
+        56,
+        62,
+        1160,
+        48
+      ],
+      "geometry": "rect",
+      "text": "GitHub Actions page keeps mutations human-approved",
+      "textPreview": "GitHub Actions page keeps mutations human-approved",
+      "resolvedFontSize": 36,
+      "resolvedTextStyle": {
+        "fontSize": 36,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GitHub Actions page keeps mutations human-approved"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GitHub Actions page keeps mutations human-approved",
+          "resolvedTextStyle": {
+            "fontSize": 36,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GitHub Actions page keeps mutations human-approved",
+              "fontSize": 36,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/udg7mp0v",
+      "id": "3",
+      "bbox": [
+        56,
+        112,
+        1080,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Write operations are scoped to the selected repository and run only after approval.",
+      "textPreview": "Write operations are scoped to the selected repository and run only after approval.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Write operations are scoped to the selected repository and run only after approval."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Write operations are scoped to the selected repository and run only after approval.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Write operations are scoped to the selected repository and run only after approval.",
+              "fontSize": 18,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p4rql4zi",
+      "id": "4",
+      "bbox": [
+        46,
+        162,
+        726,
+        446
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D8DEE9",
+      "lineWidth": 1
+    },
+    {
+      "order": 5,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/10ratof6",
+      "id": "5",
+      "bbox": [
+        54,
+        170,
+        710,
+        430
+      ],
+      "alt": "GitArchitect UI screenshot",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "3d4882e5-11e9-4f6e-895c-90c0566783ca",
+        "contentType": "image/png",
+        "byteLength": 56393
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/32p8jehc",
+      "id": "6",
+      "bbox": [
+        815,
+        178,
+        385,
+        30
+      ],
+      "geometry": "rect",
+      "text": "What this screen shows",
+      "textPreview": "What this screen shows",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "What this screen shows"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "What this screen shows",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "What this screen shows",
+              "fontSize": 22,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/21g7q907",
+      "id": "7",
+      "bbox": [
+        815,
+        220,
+        385,
+        136
+      ],
+      "geometry": "rect",
+      "text": "• Instruction box captures the requested GitHub mutation.\n• Repository scope is displayed before preparing the action.\n• Completed status explains when a request cannot be executed directly, such as an unstable PR merge state.",
+      "textPreview": "• Instruction box captures the requested GitHub mutation. | • Repository scope is displayed before preparing the action. | • Completed st...",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 7,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• Instruction box captures the requested GitHub"
+          },
+          {
+            "index": 2,
+            "text": "mutation."
+          },
+          {
+            "index": 3,
+            "text": "• Repository scope is displayed before preparing the"
+          },
+          {
+            "index": 4,
+            "text": "action."
+          },
+          {
+            "index": 5,
+            "text": "• Completed status explains when a request cannot"
+          },
+          {
+            "index": 6,
+            "text": "be executed directly, such as an unstable PR merge"
+          },
+          {
+            "index": 7,
+            "text": "state."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• Instruction box captures the requested GitHub mutation.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Instruction box captures the requested GitHub mutation.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• Repository scope is displayed before preparing the action.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Repository scope is displayed before preparing the action.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• Completed status explains when a request cannot be executed directly, such as an unstable PR merge state.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Completed status explains when a request cannot be executed directly, such as an unstable PR merge state.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l8n69kje",
+      "id": "8",
+      "bbox": [
+        815,
+        405,
+        385,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Backend integration",
+      "textPreview": "Backend integration",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#071126",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Backend integration"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Backend integration",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#071126",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Backend integration",
+              "fontSize": 22,
+              "color": "#071126",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k7epgfit",
+      "id": "9",
+      "bbox": [
+        815,
+        447,
+        385,
+        128
+      ],
+      "geometry": "rect",
+      "text": "• POST /sessions/:sessionId/github/write prepares the action.\n• If a write tool is proposed, backend stores paused RunState and returns approvalId.\n• POST /github/approvals/:approvalId/decision approves or rejects it.",
+      "textPreview": "• POST /sessions/:sessionId/github/write prepares the action. | • If a write tool is proposed, backend stores paused RunState and returns...",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• POST /sessions/:sessionId/github/write prepares"
+          },
+          {
+            "index": 2,
+            "text": "the action."
+          },
+          {
+            "index": 3,
+            "text": "• If a write tool is proposed, backend stores paused"
+          },
+          {
+            "index": 4,
+            "text": "RunState and returns approvalId."
+          },
+          {
+            "index": 5,
+            "text": "• POST /github/approvals/:approvalId/decision"
+          },
+          {
+            "index": 6,
+            "text": "approves or rejects it."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• POST /sessions/:sessionId/github/write prepares the action.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• POST /sessions/:sessionId/github/write prepares the action.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• If a write tool is proposed, backend stores paused RunState and returns approvalId.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• If a write tool is proposed, backend stores paused RunState and returns approvalId.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• POST /github/approvals/:approvalId/decision approves or rejects it.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• POST /github/approvals/:approvalId/decision approves or rejects it.",
+              "fontSize": 17,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e5g7a5k3",
+      "id": "10",
+      "bbox": [
+        56,
+        682,
+        360,
+        20
+      ],
+      "geometry": "rect",
+      "text": "GitArchitect presentation | 15",
+      "textPreview": "GitArchitect presentation | 15",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#536179",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GitArchitect presentation | 15"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GitArchitect presentation | 15",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#536179",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GitArchitect presentation | 15",
+              "fontSize": 13,
+              "color": "#536179",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}
