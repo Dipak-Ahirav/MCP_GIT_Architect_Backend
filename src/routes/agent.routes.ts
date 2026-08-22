@@ -31,6 +31,10 @@ import {
 } from "../controllers/ci-debugger.controller.js";
 
 import {
+  prepareSelectedWorkflowAutoFix,
+} from "../controllers/ci-auto-fix.controller.js";
+
+import {
   requestWrite,
   decideWriteApproval,
 } from "../controllers/github-write.controller.js";
@@ -96,6 +100,11 @@ router.post(
 router.post(
   "/sessions/:sessionId/actions/runs/:runId/debug",
   debugSelectedWorkflowRun,
+);
+
+router.post(
+  "/sessions/:sessionId/actions/runs/:runId/auto-fix",
+  prepareSelectedWorkflowAutoFix,
 );
 
 /*
